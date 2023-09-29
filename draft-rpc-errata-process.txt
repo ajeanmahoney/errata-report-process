@@ -9,7 +9,7 @@ Expires: 1 April 2024
 
 
             Current Process for Handling RFC Errata Reports
-                 draft-rpc-errata-process-latest-latest
+                    draft-rpc-errata-process-latest
 
 Abstract
 
@@ -212,7 +212,7 @@ Table of Contents
 
    *  RFC #
 
-   *  Type [editorial, technical]
+   *  Type: editorial, technical
 
    *  Reporter name
 
