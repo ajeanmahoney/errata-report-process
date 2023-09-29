@@ -7,12 +7,12 @@
 <title>Current Process for Handling RFC Errata Reports</title>
 <meta content="Jean Mahoney" name="author">
 <meta content="
-       This document describes a web-based process for handling the
+       This document describes the current web-based process for handling the
 submission, verification, and posting of errata for the RFC Series.
 The main concepts behind this process are (1) distributing the
 responsibility for verification to the appropriate organization or
 person for each RFC stream, and (2) using a Web portal to automate
-the book-keeping for handling errata. 
+the processing of erratum reports. 
     " name="description">
 <meta content="xml2rfc 3.18.0" name="generator">
 <meta content="errata system" name="keyword">
@@ -1065,12 +1065,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <h1 id="title">Current Process for Handling RFC Errata Reports</h1>
 <section id="section-abstract">
       <h2 id="abstract"><a href="#abstract" class="selfRef">Abstract</a></h2>
-<p id="section-abstract-1">This document describes a web-based process for handling the
+<p id="section-abstract-1">This document describes the current web-based process for handling the
 submission, verification, and posting of errata for the RFC Series.
 The main concepts behind this process are (1) distributing the
 responsibility for verification to the appropriate organization or
 person for each RFC stream, and (2) using a Web portal to automate
-the book-keeping for handling errata.<a href="#section-abstract-1" class="pilcrow">¶</a></p>
+the processing of erratum reports.<a href="#section-abstract-1" class="pilcrow">¶</a></p>
 </section>
 <section class="note rfcEditorRemove" id="section-note.1">
       <h2 id="name-discussion-venues">
@@ -1189,36 +1189,35 @@ the book-keeping for handling errata.<a href="#section-abstract-1" class="pilcro
       <h2 id="name-introduction">
 <a href="#section-1" class="section-number selfRef">1. </a><a href="#name-introduction" class="section-name selfRef">Introduction</a>
       </h2>
-<p id="section-1-1">This document describes a new set of the procedures and mechanisms
-for handling RFC errata, to improve efficiency and accountability of
-errata processing.  The main concepts are (1) distributing
+<p id="section-1-1">This document describes the procedures and mechanisms
+for handling RFC errata reports.  The main concepts are (1) distributing
 responsibility for errata verification to the appropriate body or
 person for each RFC stream, and (2) using a Web portal to automate
-the book-keeping task for verifying and posting errata.<a href="#section-1-1" class="pilcrow">¶</a></p>
+the tasks for verifying and posting errata.<a href="#section-1-1" class="pilcrow">¶</a></p>
 <p id="section-1-2">The errata process assumes the organization of RFC publication into
 four document streams <span>[<a href="#RFC4844" class="cite xref">RFC4844</a>]</span>: (1) the IETF stream, which includes
-both working group and individual submissions, (2) the IAB stream,
-(3) the IRTF stream, and (4) the Independent Submission stream.  We
-propose that personnel representing each stream be responsible for
-verifying the errata reported for that stream's RFCs.  In particular,
-we propose that one or more stream-specific parties (SSPs) be
-designated with responsibility for verifying errata for each stream.<a href="#section-1-2" class="pilcrow">¶</a></p>
-<p id="section-1-3">At the organizational level, the SSPs might be:<a href="#section-1-3" class="pilcrow">¶</a></p>
+both working group and individual submissions plus all RFCs that were
+published before the concept of streams existed (known as legacy RFCs), (2) the IAB stream,
+(3) the IRTF stream, (4) the Independent Submission stream, and
+(5) the Editorial stream.
+Personnel representing each stream, called the stream-specific party (SSP), are responsible for
+verifying the erratum reports for that stream's RFCs.<a href="#section-1-2" class="pilcrow">¶</a></p>
+<p id="section-1-3">At the organizational level, the SSPs are:<a href="#section-1-3" class="pilcrow">¶</a></p>
 <ul class="normal">
-<li class="normal" id="section-1-4.1">IESG for IETF documents<a href="#section-1-4.1" class="pilcrow">¶</a>
+<li class="normal" id="section-1-4.1">IESG for legacy RFCs<a href="#section-1-4.1" class="pilcrow">¶</a>
 </li>
-        <li class="normal" id="section-1-4.2">IAB for IAB documents<a href="#section-1-4.2" class="pilcrow">¶</a>
+        <li class="normal" id="section-1-4.2">The Area Directors for RFCs that originated in one of that area's working groups.<a href="#section-1-4.2" class="pilcrow">¶</a>
 </li>
-        <li class="normal" id="section-1-4.3">IRSG for IRTF documents<a href="#section-1-4.3" class="pilcrow">¶</a>
+        <li class="normal" id="section-1-4.3">IAB for IAB stream documents<a href="#section-1-4.3" class="pilcrow">¶</a>
 </li>
-        <li class="normal" id="section-1-4.4">RFC Editor/Editorial Board for Independent Submissions<a href="#section-1-4.4" class="pilcrow">¶</a>
+        <li class="normal" id="section-1-4.4">IRSG for IRTF stream documents<a href="#section-1-4.4" class="pilcrow">¶</a>
+</li>
+        <li class="normal" id="section-1-4.5">Independent Submissions Editor for Independent Submission stream documents<a href="#section-1-4.5" class="pilcrow">¶</a>
+</li>
+        <li class="normal" id="section-1-4.6">RFC Series Approval Board for Editorial stream documents<a href="#section-1-4.6" class="pilcrow">¶</a>
 </li>
       </ul>
-<p id="section-1-5">The IETF stream could be considered to be subdivided by area, so that
-each Area Director could be an SSP for RFCs originating in that area.
-The RFC publication process maintains the AD contact information for
-each RFC, so errata reports for RFCs in the IETF document stream
-could be sent to the appropriate ADs.<a href="#section-1-5" class="pilcrow">¶</a></p>
+<p id="section-1-5">In addition, the RFC Production Center reviews all editorial errata reports.<a href="#section-1-5" class="pilcrow">¶</a></p>
 <div id="background-on-rfc-errata">
 <section id="section-1.1">
         <h3 id="name-background-on-rfc-errata">
@@ -1229,12 +1228,10 @@ idea was to discourage readers from repeatedly pointing out the same
 typos in published RFCs.  This evolved into the errata verification
 and posting process described in Appendix B, which was a manually
 operated, email-based task.<a href="#section-1.1-1" class="pilcrow">¶</a></p>
-<p id="section-1.1-2">Unfortunately, our understanding of the errata problem was wrong in
-several ways.  The number of errors reported turned out to be
-significantly greater than anticipated, and the process of vetting
-and posting required more human resources.<a href="#section-1.1-2" class="pilcrow">¶</a></p>
-<p id="section-1.1-3">Another issue with errata is that some of the reported errors are not
-simply editorial, but rather correct technical contents of RFCs.  A
+<p id="section-1.1-2">Because the number of errors reported turned out to be significantly greater than anticipated, and the process of vetting
+and posting required more human resources, a web-based process was created.<a href="#section-1.1-2" class="pilcrow">¶</a></p>
+<p id="section-1.1-3">Another reason to go with a web-based approach to handling erratum reports is that about half the reports are not
+simply editorial, but rather apply to the technical contents of RFCs.  A
 savvy implementer of the specification can often, but not always,
 figure out what was intended by the RFC as published, but technical
 errors should be announced somehow.  Furthermore, posting technical
@@ -1252,9 +1249,6 @@ defined in the document, but this distinction may be too imprecise to
 avoid hard choices.  For the IETF stream, these choices should be
 made by the IESG, and are discussed in their proposed guidelines on
 errata processing <span>[<a href="#IESG-Err-Proc" class="cite xref">IESG-Err-Proc</a>]</span>.<a href="#section-1.1-4" class="pilcrow">¶</a></p>
-<p id="section-1.1-5">In summary, errata have become a much larger, more complex, and more
-important issue than they were originally.  This proposal attempts to
-address these problems.<a href="#section-1.1-5" class="pilcrow">¶</a></p>
 </section>
 </div>
 </section>
@@ -1265,12 +1259,12 @@ address these problems.<a href="#section-1.1-5" class="pilcrow">¶</a></p>
 <a href="#section-2" class="section-number selfRef">2. </a><a href="#name-proposed-errata-process-usi" class="section-name selfRef">Proposed Errata Process Using the Web Portal</a>
       </h2>
 <p id="section-2-1">To manage and automate the reporting, verifying, and posting of
-errata, the RFC Editor has transitioned to a Web application
-("portal").  This Web portal allows for a more uniform reporting
+errata, the RFC Editor website provides a web application
+("portal").  This web portal allows for a more uniform reporting
 process, eases communication among the parties responsible for
 verification, and automates the posting of errata as soon as they are
 reported.<a href="#section-2-1" class="pilcrow">¶</a></p>
-<p id="section-2-2">There are four possible states for an erratum under this proposal:<a href="#section-2-2" class="pilcrow">¶</a></p>
+<p id="section-2-2">There are four possible states for an erratum report:<a href="#section-2-2" class="pilcrow">¶</a></p>
 <ol start="1" type="1" class="normal type-1" id="section-2-3">
 <li id="section-2-3.1">Reported - The erratum has been reported but is unverified.<a href="#section-2-3.1" class="pilcrow">¶</a>
 </li>
@@ -1278,24 +1272,24 @@ reported.<a href="#section-2-1" class="pilcrow">¶</a></p>
 </li>
         <li id="section-2-3.3">Rejected - The erratum was redundant or incorrect and has been discarded.<a href="#section-2-3.3" class="pilcrow">¶</a>
 </li>
-        <li id="section-2-3.4">Archived - The erratum is not a necessary update to the RFC. However, it should be considered in future revisions of the RFC. (Note that this state is not yet available; it is pending the IESG's statement regarding errata processing <span>[<a href="#IESG-Err-Proc" class="cite xref">IESG-Err-Proc</a>]</span>.)<a href="#section-2-3.4" class="pilcrow">¶</a>
+        <li id="section-2-3.4">Held for Document Update - The erratum is not a necessary update to the RFC. However, it should be considered in future revisions of the RFC.<a href="#section-2-3.4" class="pilcrow">¶</a>
 </li>
       </ol>
-<p id="section-2-4">Currently, Reported and Verified errata are posted (see Section 2.4
+<p id="section-2-4">Currently, reports in all states are posted (see Section 2.4
 for more details).<a href="#section-2-4" class="pilcrow">¶</a></p>
 <p id="section-2-5">For more information on the states and their definitions, and the
-guidelines by which the IESG intends to classify errata into the the
+guidelines by which the IESG classifies erratum reports into the
 above states, see <span>[<a href="#IESG-Err-Proc" class="cite xref">IESG-Err-Proc</a>]</span>.<a href="#section-2-5" class="pilcrow">¶</a></p>
 <p id="section-2-6">The Web interface supports the following functions:<a href="#section-2-6" class="pilcrow">¶</a></p>
 <ol start="1" type="1" class="normal type-1" id="section-2-7">
 <li id="section-2-7.1">Retrieve -- display all posted errata for a specific RFC number or display a particular erratum by its errata ID number.<a href="#section-2-7.1" class="pilcrow">¶</a>
 </li>
-        <li id="section-2-7.2">Report -- report a new erratum, as described below.  (See <span>[<a href="#HOW_TO_REPORT" class="cite xref">HOW_TO_REPORT</a>]</span> for up-to-date instructions on reporting a new erratum.)<a href="#section-2-7.2" class="pilcrow">¶</a>
+        <li id="section-2-7.2">Report -- report a new erratum, as described below.  (See <span>[<a href="#HOW_TO_REPORT" class="cite xref">HOW_TO_REPORT</a>]</span> for instructions on reporting a new erratum.)<a href="#section-2-7.2" class="pilcrow">¶</a>
 </li>
         <li id="section-2-7.3">Edit/Verify/Reject -- used by an SSP to edit the contents of an erratum and change its state.<a href="#section-2-7.3" class="pilcrow">¶</a>
 </li>
       </ol>
-<p id="section-2-8">The following sections describe the proposed process in more detail.<a href="#section-2-8" class="pilcrow">¶</a></p>
+<p id="section-2-8">The following sections describe the process in more detail.<a href="#section-2-8" class="pilcrow">¶</a></p>
 <div id="reporting-errata">
 <section id="section-2.1">
         <h3 id="name-reporting-errata">
