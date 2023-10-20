@@ -1345,7 +1345,7 @@ not already appear on the errata page for any given RFC.
 This step is to prevent multiple reports of the same error.<a href="#section-2.1-1" class="pilcrow">¶</a></p>
 <p id="section-2.1-2">The user then reports the erratum using a Web form to create a report
 record in the RFC errata database.  The report is composed of
-information provided by the reporter, and is supplemented by data
+information provided by the reporter and is supplemented by data
 drawn from the primary rfc-editor.org database.  The erratum report
 record includes the following fields:<a href="#section-2.1-2" class="pilcrow">¶</a></p>
 <p id="section-2.1-3">The following information is requested from the reporter. All fields must be filled in:<a href="#section-2.1-3" class="pilcrow">¶</a></p>
@@ -1385,8 +1385,8 @@ the RPC to verify editorial erratum reports and to note frequent editorial
 errors that could possibly lead to improvements in the editorial
 process.<a href="#section-2.1-5" class="pilcrow">¶</a></p>
 <p id="section-2.1-6">With the aid of published guidelines (see
-<span>[<a href="#HOW_TO_REPORT" class="cite xref">HOW_TO_REPORT</a>]</span>), the reporter should make the right technical/
-editorial classification.  However, if the reporter does misclassify the
+<span>[<a href="#HOW_TO_REPORT" class="cite xref">HOW_TO_REPORT</a>]</span>), the reporter should make the right technical/editorial
+classification.  However, if the reporter does misclassify the
 report, the SSP can fix the classification when logged in as a verifier.<a href="#section-2.1-6" class="pilcrow">¶</a></p>
 <p id="section-2.1-7">The reporter should enter a new erratum using the
 Original and Corrected Text fields, as this allows for easier
@@ -1636,10 +1636,18 @@ until its state is updated by verifiers as described above.<a href="#section-2.4
             <p id="section-2.4-3.1.1">The report can be discovered through the RFC errata search page: https://www.rfc-editor.org/errata.php.<a href="#section-2.4-3.1.1" class="pilcrow">¶</a></p>
 </li>
           <li id="section-2.4-3.2">
-            <p id="section-2.4-3.2.1">A link to the RFC's errata page appears on the following:
-     * the results of the RFC search engine: https://www.rfc-editor.org/rfcsearch.html.
-     * the RFC's info page. For example, see https://www.rfc-editor.org/info/rfc2119.
-     * On the HTML format of the RFC. For example, https://www.rfc-editor.org/rfc/rfc2119.html.<a href="#section-2.4-3.2.1" class="pilcrow">¶</a></p>
+            <p id="section-2.4-3.2.1">A link to the RFC's errata page appears on the following:<a href="#section-2.4-3.2.1" class="pilcrow">¶</a></p>
+<ul class="normal">
+<li class="normal" id="section-2.4-3.2.2.1">
+                <p id="section-2.4-3.2.2.1.1">the results of the RFC search engine: https://www.rfc-editor.org/rfcsearch.html.<a href="#section-2.4-3.2.2.1.1" class="pilcrow">¶</a></p>
+</li>
+              <li class="normal" id="section-2.4-3.2.2.2">
+                <p id="section-2.4-3.2.2.2.1">the RFC's info page. For example, see https://www.rfc-editor.org/info/rfc2119.<a href="#section-2.4-3.2.2.2.1" class="pilcrow">¶</a></p>
+</li>
+              <li class="normal" id="section-2.4-3.2.2.3">
+                <p id="section-2.4-3.2.2.3.1">On the HTML format of the RFC. For example, https://www.rfc-editor.org/rfc/rfc2119.html.<a href="#section-2.4-3.2.2.3.1" class="pilcrow">¶</a></p>
+</li>
+            </ul>
 </li>
         </ol>
 <p id="section-2.4-4">All erratum reports for a single RFC, except for obvious spam reports,
@@ -1729,7 +1737,7 @@ are posted in the following order:<a href="#section-2.4-4" class="pilcrow">¶</a
               <p id="section-2.5.1-11.1.1">To: reporter, authors<a href="#section-2.5.1-11.1.1" class="pilcrow">¶</a></p>
 </li>
             <li class="normal" id="section-2.5.1-11.2">
-              <p id="section-2.5.1-11.2.1">CC: ISE (TODO - twice), IANA, rfc-editor@rfc-editor.org<a href="#section-2.5.1-11.2.1" class="pilcrow">¶</a></p>
+              <p id="section-2.5.1-11.2.1">CC: ISE, Document Shepherd, IANA, rfc-editor@rfc-editor.org<a href="#section-2.5.1-11.2.1" class="pilcrow">¶</a></p>
 </li>
           </ul>
 <p id="section-2.5.1-12">Editorial Stream:<a href="#section-2.5.1-12" class="pilcrow">¶</a></p>
@@ -1755,7 +1763,7 @@ are posted in the following order:<a href="#section-2.4-4" class="pilcrow">¶</a
               <p id="section-2.5.2-3.1.1">To: reporter, author<a href="#section-2.5.2-3.1.1" class="pilcrow">¶</a></p>
 </li>
             <li class="normal" id="section-2.5.2-3.2">
-              <p id="section-2.5.2-3.2.1">CC: rfc-ed@rfc-editor.org (TODO why different), IESG, IANA<a href="#section-2.5.2-3.2.1" class="pilcrow">¶</a></p>
+              <p id="section-2.5.2-3.2.1">CC: rfc-ed@rfc-editor.org, IESG, IANA<a href="#section-2.5.2-3.2.1" class="pilcrow">¶</a></p>
 </li>
           </ul>
 <p id="section-2.5.2-4">IETF Stream:<a href="#section-2.5.2-4" class="pilcrow">¶</a></p>
@@ -1829,10 +1837,7 @@ are posted in the following order:<a href="#section-2.4-4" class="pilcrow">¶</a
           <p id="section-3-2.4.1">Act as SSP for editorial erratum reports.<a href="#section-3-2.4.1" class="pilcrow">¶</a></p>
 </li>
         <li id="section-3-2.5">
-          <p id="section-3-2.5.1">Send periodic nudge messages to SSPs for errata that are in the Reported state. TODO - no longer done.<a href="#section-3-2.5.1" class="pilcrow">¶</a></p>
-</li>
-        <li id="section-3-2.6">
-          <p id="section-3-2.6.1">Track SSP and community requests for various features that will make the job of reporting and verifying errata more efficient.<a href="#section-3-2.6.1" class="pilcrow">¶</a></p>
+          <p id="section-3-2.5.1">Track SSP and community requests for various features that will make the job of reporting and verifying errata more efficient.<a href="#section-3-2.5.1" class="pilcrow">¶</a></p>
 </li>
       </ol>
 </section>
