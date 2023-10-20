@@ -67,13 +67,13 @@ Table of Contents
    2.  Current Errata Process Using the Web Portal
      2.1.  Reporting Errata
      2.2.  Initial Notification Message
-       2.2.1.  Technical erratum reports
-       2.2.2.  Editorial erratum reports
+       2.2.1.  Technical Erratum Reports
+       2.2.2.  Editorial Erratum Reports
      2.3.  Verifying Erratum Reports
      2.4.  Posting Erratum Reports
      2.5.  Erratum Report Announcements
-       2.5.1.  Technical erratum reports
-       2.5.2.  Editorial erratum reports
+       2.5.1.  Technical Erratum Reports
+       2.5.2.  Editorial Erratum Reports
    3.  Role of the RPC
    4.  Security Considerations
    5.  IANA Considerations
@@ -300,7 +300,7 @@ Table of Contents
    Notifications are determined by stream and type of erratum report and
    are sent by rfc-editor@rfc-editor.org to the following SSPs.
 
-2.2.1.  Technical erratum reports
+2.2.1.  Technical Erratum Reports
 
    Technical erratum reports are sent to SSPs, and the reporter and rfc-
    editor@rfc-editor.org are CCed.
@@ -342,7 +342,7 @@ Table of Contents
 
    *  CC: reporter, rfc-editor@rfc-editor.org
 
-2.2.2.  Editorial erratum reports
+2.2.2.  Editorial Erratum Reports
 
    All editorial erratum reports are sent to rfc-editor@rfc-editor.org,
    and other SSPs are CCed:
@@ -489,7 +489,7 @@ Table of Contents
 
    Notifications are determined by stream and type of erratum report.
 
-2.5.1.  Technical erratum reports
+2.5.1.  Technical Erratum Reports
 
    The announcement of verified technical erratum reports are sent from
    rfc-editor@rfc-editor.org to the following:
@@ -532,7 +532,7 @@ Table of Contents
 
    *  CC: RSAB, RSWG, IANA, rfc-editor@rfc-editor.org
 
-2.5.2.  Editorial erratum reports
+2.5.2.  Editorial Erratum Reports
 
    The announcement of verified editorial erratum reports are sent from
    rfc-editor@rfc-editor.org to the following:
