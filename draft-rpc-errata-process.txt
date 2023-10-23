@@ -129,8 +129,8 @@ Table of Contents
 
    Because the number of errors reported turned out to be significantly
    greater than anticipated, and the process of vetting and posting
-   required more human resources, a web-based process was created and
-   launched in November 2007.
+   required more human resources, a web-based process
+   [ERRATA_SYS_PROPOSAL] was created and launched in November 2007.
 
    Another reason for the current, web-based approach to handling
    erratum reports is that about half the reports are not simply
@@ -599,7 +599,9 @@ Table of Contents
 
    4.  Act as SSP for editorial erratum reports.
 
-   5.  Track SSP and community requests for various features that will
+   5.  Remove junk and duplicate reports.
+
+   6.  Track SSP and community requests for various features that will
        make the job of reporting and verifying errata more efficient.
 
 4.  Security Considerations
@@ -629,6 +631,11 @@ Table of Contents
    [ERRATA_PAGE]
               RFC Editor, "RFC Errata", n.d.,
               <https://www.rfc-editor.org/errata.php>.
+
+   [ERRATA_SYS_PROPOSAL]
+              RFC Editor, "RFC Editor Proposal for Handling RFC Errata",
+              n.d., <https://datatracker.ietf.org/doc/draft-rfc-editor-
+              errata-process/>.
 
    [HOW_TO_REPORT]
               RFC Editor, "How to Report Errata", n.d.,
